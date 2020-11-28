@@ -1,55 +1,62 @@
 html,
 body {
-	height: 100%;
+  height: 100%;
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
-section{
+
+section {
   height: 100vh;
- }
+}
+
 #hero {
-	background: #222 url('../img/asia/asia1.jpg') center right no-repeat;
-	background-size: cover;
-	color: white;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0 auto;
+  background: #222 url('../img/asia/asia1.jpg') center right no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
+
 .form-inline {
-	justify-content: center;
+  justify-content: center;
 }
+
 #hero-caption {
-	width: 100%;
+  width: 100%;
 }
 
 .section-content {
-	padding: 5rem 0;
+  padding: 5rem 0;
 }
+
 .aboutme {
   // hei
-	background: url('./img/girlincar.jpg') center center no-repeat;
-	background-size: cover;
+
+  background-size: cover;
 }
+
 .about-text {
-	background: rgba(0, 0, 0, 0.5);
-	color: white;
-	padding: 1.875rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1.875rem;
   border-radius: 20px;
 }
 
 
-.publications{
-  height: 100vh;
+.publications {
+  background: #222 url('../img/papers_bgr.jpg');
+  background-size: cover;
 }
 
 
 #footer-main {
-	background: #222;
-	color: white;
-	font-size: 0.8rem;
-	padding: 2.5rem 0;
+  background: #222;
+  color: white;
+  font-size: 0.8rem;
+  padding: 2.5rem 0;
 }
