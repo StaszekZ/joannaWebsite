@@ -7,11 +7,14 @@ img {
   max-width: 100%;
 }
 
+section {
+  height: 100vh;
+}
+
 #hero {
-  background: #222 url("../img/asia/asia1.jfif") center right no-repeat;
+  background: #222 url("../img/asia/asia1.jpg") center right no-repeat;
   background-size: cover;
   color: white;
-  height: 100%;
   text-align: center;
   display: flex;
   align-items: center;
@@ -31,7 +34,7 @@ img {
   padding: 5rem 0;
 }
 
-#about {
+.aboutme {
   background: url("./img/girlincar.jpg") center center no-repeat;
   background-size: cover;
 }
@@ -41,6 +44,10 @@ img {
   color: white;
   padding: 1.875rem;
   border-radius: 20px;
+}
+
+.publications {
+  height: 100vh;
 }
 
 #footer-main {
