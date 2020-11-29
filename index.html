@@ -10,28 +10,16 @@
 </head>
 
 <body>
-	<section id="hero">
-		<div id="hero-caption" class="container">
+	<section id="hero" class="hero">
+		<div class="container">
 			<div class="about-text col-12 col-lg-8">
-				<div class="col-md-12">
+				<div class="col-12">
 					<h1>Joanna Zajaczkowska, PhD Pharm</h1>
-					<p></p>
-					Just line the old bootstrap Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Voluptates totam eaque quasi facere quod repellendus porro error earum commodi.
-					Mollitia magni pariatur iusto. Sequi rem quas cum in reprehenderit quasi.
+					<p>
+						Just line the old bootstrap Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						Voluptates totam eaque quasi facere quod repellendus porro error earum commodi.
+						Mollitia magni pariatur iusto. Sequi rem quas cum in reprehenderit quasi.
 					</p>
-
-					<!-- <form action="" class="form-inline">
-								<div class="form-group">
-									<label for="" class="sr-only">Name</label>
-									<input type="text" class="form-control form-control-lg" placeholder="Jane Doe" />
-								</div>
-								<div class="form-group">
-									<label for="" class="sr-only">Name</label>
-						<input type="email" class="form-control form-control-lg" placeholder="jane.doe@gmail.com" />
-					</div>
-					<button type="submit" class="btn btn-success btn-lg">Ok, Go!</button>
-				</form> -->
 					<br />
 					<a href="#nav-main" class="btn btn-warning btn-md" role="button">&darr;</a>
 				</div>
@@ -56,15 +44,6 @@
 				<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
 				<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 			</ul>
-			<!-- <form class="form-inline">
-					<input
-						class="form-control mr-sm-2"
-						type="search"
-						placeholder="Search"
-						aria-label="Search"
-					/>
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-				</form> -->
 		</div>
 	</nav>
 	<main>
@@ -81,121 +60,169 @@
 				</p>
 				<div class="row d-flex justify-content-around">
 					<div class="col-12 col-lg-10 text-center">
-						<div class="card-group">
-							<div class="card bg-light m-3 rounded">
-								<div class="card-block">
-									<img src="./img/papers/expert_opinion.JPG" alt="a chaltbok" />
-									<h4 class="card-title text-center">Abstract
-									</h4>
-								</div>
 
-								<div class="card-block">
-									<p class="card-text">
-										Introduction: Unfractionated heparin is a strongly anionic anticoagulant used extensively in
-										medicine to prevent blood
-										clotting. In the case of an emergency bleeding in response to heparin, the protamine sulfate is
-										administered. Despite
-										its extensive clinical use, protamine may produce life-threatening side effects such as systemic
-										hypotension,
-										catastrophic pulmonary vasoconstriction or allergic reactions. Recent studies have demonstrated new
-										organ-specific
-										complications of the heparin reversal with protamine.
+						<div class="card-group ">
+							<div class="accordion" id="accordionExample">
+								<div class="row">
+									<div class="card col-12 col-md-6 col-lg-4 bg-light rounded">
+										<div class="card-block">
+											<img src="./img/papers/expert_opinion.JPG" alt="a chaltbok" />
+											<!-- <h4 class="card-title text-center d-none d-sm-block">Abstract
+											</h4> -->
+											<button class="btn btn-outline-warning" type="button" data-toggle="collapse"
+												data-target="#expertOpinion" aria-expanded="false" aria-controls="expertOpinion">
+												See Abstract
+											</button>
 
-										Areas covered: Past and present knowledge of the mechanisms responsible for the toxicity of
-										protamine and the most
-										promising potential replacements of protamine in the different phases of development.
+										</div>
 
-										Expert opinion: Despite of the low therapeutic index, protamine is the only registered antidote of
-										heparins. The
-										toxicology of protamine depends on a complex interaction of the high molecular weight, a cationic
-										peptide with the
-										surfaces of the vasculature and blood cells. The mechanisms involve membrane receptors and ion
-										channels targeted by
-										different vasoactive compounds, such as nitric oxide, bradykinin or histamine. Unacceptable side
-										effects of protamine
-										have led to a search for new alternatives: UHRA, LMWP, and Dex40-GTMAC3 are in the preclinical
-										stage; the two other
-										agents (andexanet alfa and PER977) are already in the advanced clinical phases.
-									</p>
-									<a type="button" class="btn btn-outline-success" href="https://pubmed.ncbi.nlm.nih.gov/27223896/">
-										Learn more
-									</a>
-								</div>
-							</div>
-							<div class="card bg-light m-3 rounded">
-								<div class="card-block">
-									<img src="./img/papers/marine_protamine.JPG" alt="a chaltbok" />
-									<h4 class="card-title">Abstract</h4>
-								</div>
+										<div class="card-block collapse" id="expertOpinion" aria-labelledby="expertOpinion"
+											data-parent="#accordionExample">
+											<p class="card-text">
+												Introduction: Unfractionated heparin is a strongly anionic anticoagulant used extensively in
+												medicine to prevent blood
+												clotting. In the case of an emergency bleeding in response to heparin, the protamine sulfate is
+												administered. Despite
+												its extensive clinical use, protamine may produce life-threatening side effects such as systemic
+												hypotension,
+												catastrophic pulmonary vasoconstriction or allergic reactions. Recent studies have demonstrated
+												new
+												organ-specific
+												complications of the heparin reversal with protamine.
 
-								<div class="card-block">
-									<p class="card-text">
-										Protamine sulfate (PS) is a polycationic protein drug obtained from the sperm of fish, and is used
-										to reverse the
-										anticoagulant effect of unfractionated heparin (UFH). However, the interactions between PS, UFH, and
-										platelets are still
-										not clear. We measured the platelet numbers and collagen-induced aggregation, P-selectin, platelet
-										factor 4,
-										β-thromboglobulin, prostacyclin metabolite, D-dimers, activated partial thromboplastin time,
-										prothrombin time,
-										anti-factor Xa, fibrinogen, thrombus weight and megakaryocytopoiesis in blood collected from mice
-										and rats in different
-										time points.. All of the groups were treated intravenously with vehicle, UFH, PS, or UFH with PS. We
-										found a short-term
-										antiplatelet activity of PS in mice and rats, and long-term platelet-independent antithrombotic
-										activity in rats with
-										electrically-induced thrombosis. The antiplatelet and antithrombotic potential of PS may contribute
-										to bleeding risk in
-										PS-overdosed patients. The inhibitory effect of PS on the platelets was attenuated by UFH without
-										inducing
-										thrombocytopenia. Treatment with UFH and PS did not affect the formation, number, or activation of
-										platelets, or the
-										thrombosis development in rodents.
-									</p>
-									<a type="button" class="btn btn-outline-success"
-										href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6780366/pdf/marinedrugs-17-00539.pdf"
-										target="_blank">
-										Learn more
-									</a>
-								</div>
-							</div>
-							<div class="card bg-light m-3 rounded">
-								<img src="./img/papers/macromolecules.JPG" alt="a chaltbok" />
-								<div class="card-block">
-									<p class="card-text">
-										Di- and triblock copolymers with low dispersity of molecular weight were synthesized using radical
-										addition–fragmentation chain transfer polymerization. The copolymers contained anionic poly(sodium
-										2-acrylamido-2-methylpropanesulfonate) (PAMPS) block as an anticoagulant component. The block added
-										to lower the
-										toxicity was either poly(ethylene glycol) (PEG) or poly(2-(methacryloyloxy)ethyl phosphorylcholine)
-										(PMPC). The polymers
-										prolonged clotting times both in vitro and in vivo. The influence of the polymer architecture and
-										composition on the
-										efficacy of anticoagulation and safety parameters was evaluated. The polymer with the optimal
-										safety/efficacy profile
-										was PEG47-b-PAMPS108, i.e., a block copolymer with the degrees of polymerization of PEG and PAMPS
-										blocks equal to 47 and
-										108, respectively. The anticoagulant action of copolymers is probably mediated by antithrombin, but
-										it differs from that
-										of unfractionated heparin. PEG47-b-PAMPS108 also inhibited platelet aggregation in vitro and
-										increased the prostacyclin
-										production but had no antiplatelet properties in vivo. PEG47-b-PAMPS108 anticoagulant activity can
-										be efficiently
-										reversed with a copolymer of PEG and poly((3-(methacryloylamino)propyl)trimethylammonium chloride)
-										(PMAPTAC)
-										(PEG41-b-PMAPTAC53, HBC), which may be attributed to the formation of polyelectrolyte complexes with
-										PEG shells without
-										anticoagulant properties.
-									</p>
-									<a type="button" class="btn btn-outline-success"
-										href="https://pubs.acs.org/doi/pdf/10.1021/acs.biomac.8b00691">
-										Learn more
-									</a>
+												Areas covered: Past and present knowledge of the mechanisms responsible for the toxicity of
+												protamine and the most
+												promising potential replacements of protamine in the different phases of development.
+
+												Expert opinion: Despite of the low therapeutic index, protamine is the only registered antidote
+												of
+												heparins. The
+												toxicology of protamine depends on a complex interaction of the high molecular weight, a
+												cationic
+												peptide with the
+												surfaces of the vasculature and blood cells. The mechanisms involve membrane receptors and ion
+												channels targeted by
+												different vasoactive compounds, such as nitric oxide, bradykinin or histamine. Unacceptable side
+												effects of protamine
+												have led to a search for new alternatives: UHRA, LMWP, and Dex40-GTMAC3 are in the preclinical
+												stage; the two other
+												agents (andexanet alfa and PER977) are already in the advanced clinical phases.
+											</p>
+											<a type="button" class="btn btn-outline-success" href="https://pubmed.ncbi.nlm.nih.gov/27223896/">
+												Learn more
+											</a>
+										</div>
+									</div>
+									<div class="card col-12 col-md-6 col-lg-4 bg-light rounded">
+										<div class="card-block">
+											<img src="./img/papers/marine_protamine.JPG" alt="a chaltbok" />
+											<!-- <h4 class="card-title">Abstract</h4> -->
+											<button class="btn btn-outline-warning" type="button" data-toggle="collapse"
+												data-target="#marineProtamine" aria-expanded="false" aria-controls="marineProtamine">
+												See Abstract
+											</button>
+										</div>
+
+										<div class="card-block collapse" id="marineProtamine" aria-labelledby="marineProtamine"
+											data-parent="#accordionExample">
+											<p class="card-text">
+												Protamine sulfate (PS) is a polycationic protein drug obtained from the sperm of fish, and is
+												used
+												to reverse the
+												anticoagulant effect of unfractionated heparin (UFH). However, the interactions between PS, UFH,
+												and
+												platelets are still
+												not clear. We measured the platelet numbers and collagen-induced aggregation, P-selectin,
+												platelet
+												factor 4,
+												β-thromboglobulin, prostacyclin metabolite, D-dimers, activated partial thromboplastin time,
+												prothrombin time,
+												anti-factor Xa, fibrinogen, thrombus weight and megakaryocytopoiesis in blood collected from
+												mice
+												and rats in different
+												time points.. All of the groups were treated intravenously with vehicle, UFH, PS, or UFH with
+												PS.
+												We
+												found a short-term
+												antiplatelet activity of PS in mice and rats, and long-term platelet-independent antithrombotic
+												activity in rats with
+												electrically-induced thrombosis. The antiplatelet and antithrombotic potential of PS may
+												contribute
+												to bleeding risk in
+												PS-overdosed patients. The inhibitory effect of PS on the platelets was attenuated by UFH
+												without
+												inducing
+												thrombocytopenia. Treatment with UFH and PS did not affect the formation, number, or activation
+												of
+												platelets, or the
+												thrombosis development in rodents.
+											</p>
+											<a type="button" class="btn btn-outline-success"
+												href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6780366/pdf/marinedrugs-17-00539.pdf"
+												target="_blank">
+												Learn more
+											</a>
+										</div>
+									</div>
+
+									<div class="card col-12 col-md-6 col-lg-4 bg-light rounded">
+										<div class="card-block">
+											<img src="./img/papers/macromolecules.JPG" alt="a chaltbok" />
+											<button class="btn btn-outline-warning" type="button" data-toggle="collapse"
+												data-target="#macromolecules" aria-expanded="false" aria-controls="macromolecules">
+												See Abstract
+											</button>
+										</div>
+										<div class="card-block collapse" id="macromolecules" aria-labelledby="macromolecules"
+											data-parent="#accordionExample">
+											<p class=" card-text">
+												Di- and triblock copolymers with low dispersity of molecular weight were synthesized using
+												radical
+												addition–fragmentation chain transfer polymerization. The copolymers contained anionic
+												poly(sodium
+												2-acrylamido-2-methylpropanesulfonate) (PAMPS) block as an anticoagulant component. The block
+												added
+												to lower the
+												toxicity was either poly(ethylene glycol) (PEG) or poly(2-(methacryloyloxy)ethyl
+												phosphorylcholine)
+												(PMPC). The polymers
+												prolonged clotting times both in vitro and in vivo. The influence of the polymer architecture
+												and
+												composition on the
+												efficacy of anticoagulation and safety parameters was evaluated. The polymer with the optimal
+												safety/efficacy profile
+												was PEG47-b-PAMPS108, i.e., a block copolymer with the degrees of polymerization of PEG and
+												PAMPS
+												blocks equal to 47 and
+												108, respectively. The anticoagulant action of copolymers is probably mediated by antithrombin,
+												but
+												it differs from that
+												of unfractionated heparin. PEG47-b-PAMPS108 also inhibited platelet aggregation in vitro and
+												increased the prostacyclin
+												production but had no antiplatelet properties in vivo. PEG47-b-PAMPS108 anticoagulant activity
+												can
+												be efficiently
+												reversed with a copolymer of PEG and poly((3-(methacryloylamino)propyl)trimethylammonium
+												chloride)
+												(PMAPTAC)
+												(PEG41-b-PMAPTAC53, HBC), which may be attributed to the formation of polyelectrolyte complexes
+												with
+												PEG shells without
+												anticoagulant properties.
+											</p>
+											<a type="button" class="btn btn-outline-success"
+												href="https://pubs.acs.org/doi/pdf/10.1021/acs.biomac.8b00691">
+												Learn more
+											</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+			</div>
 		</section>
 		<section id="projects">
 

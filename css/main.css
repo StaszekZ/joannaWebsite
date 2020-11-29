@@ -9,7 +9,7 @@ img {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #hero {
@@ -21,18 +21,6 @@ section {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-}
-
-.form-inline {
-  justify-content: center;
-}
-
-#hero-caption {
-  width: 100%;
-}
-
-.section-content {
-  padding: 5rem 0;
 }
 
 .aboutme {
@@ -49,6 +37,7 @@ section {
 .publications {
   background: #222 url("../img/papers_bgr.jpg");
   background-size: cover;
+  min-height: 100vh;
 }
 
 #footer-main {
