@@ -31,9 +31,9 @@
 		</div>
 	</section>
 	<nav class="navbar fixed-top navbar-expand-md bg-light navbar-light">
-		<a href="#" class="navbar-brand">LOGO</a>
+		<a href="#hero" class="navbar-brand">LOGO</a>
 		<button class="navbar-toggler" type="button" data-target="#nav" data-toggle="collapse" aria-controls="nav"
-			aria-expanded="false" aria-label="Toggle navigation">
+			aria-expanded="false" aria-label="toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="navbar-collapse collapse" id="nav">
@@ -58,11 +58,11 @@
 					Please get familiar with my scientific publication, presented in
 					chronological oder:
 				</p>
-				<div class="row d-flex justify-content-around">
+				<div class="row d-flex justify-content-around dont-collapse-sm">
 					<div class="col-12 col-lg-10 text-center">
 
 						<div class="card-group ">
-							<div class="accordion" id="accordionExample">
+							<div class=" accordion" id="accordionExample">
 								<div class="row">
 									<div class="card col-12 col-md-6 col-lg-4 bg-light rounded">
 										<div class="card-block">
@@ -70,13 +70,13 @@
 											<!-- <h4 class="card-title text-center d-none d-sm-block">Abstract
 											</h4> -->
 											<button class="btn btn-outline-warning" type="button" data-toggle="collapse"
-												data-target="#expertOpinion" aria-expanded="false" aria-controls="expertOpinion">
+												data-target="#expertOpinion" aria-expanded="true" aria-controls="expertOpinion">
 												See Abstract
 											</button>
 
 										</div>
 
-										<div class="card-block collapse" id="expertOpinion" aria-labelledby="expertOpinion"
+										<div class="card-block collapse abstract" id="expertOpinion" aria-labelledby="expertOpinion"
 											data-parent="#accordionExample">
 											<p class="card-text">
 												Introduction: Unfractionated heparin is a strongly anionic anticoagulant used extensively in
@@ -118,12 +118,12 @@
 											<img src="./img/papers/marine_protamine.JPG" alt="a chaltbok" />
 											<!-- <h4 class="card-title">Abstract</h4> -->
 											<button class="btn btn-outline-warning" type="button" data-toggle="collapse"
-												data-target="#marineProtamine" aria-expanded="false" aria-controls="marineProtamine">
+												data-target="#marineProtamine" aria-expanded="true" aria-controls="marineProtamine">
 												See Abstract
 											</button>
 										</div>
 
-										<div class="card-block collapse" id="marineProtamine" aria-labelledby="marineProtamine"
+										<div class="card-block collapse abstract" id="marineProtamine" aria-labelledby="marineProtamine"
 											data-parent="#accordionExample">
 											<p class="card-text">
 												Protamine sulfate (PS) is a polycationic protein drug obtained from the sperm of fish, and is
@@ -173,9 +173,9 @@
 												See Abstract
 											</button>
 										</div>
-										<div class="card-block collapse" id="macromolecules" aria-labelledby="macromolecules"
+										<div class="card-block collapse abstract" id="macromolecules" aria-labelledby="macromolecules"
 											data-parent="#accordionExample">
-											<p class=" card-text">
+											<p class=" card-text show">
 												Di- and triblock copolymers with low dispersity of molecular weight were synthesized using
 												radical
 												addition–fragmentation chain transfer polymerization. The copolymers contained anionic
@@ -236,6 +236,7 @@
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>
 	<script src="./bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="./js/main.js"></script>
 </body>
 
 </html>
