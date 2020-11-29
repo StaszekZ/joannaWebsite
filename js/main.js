@@ -13,12 +13,20 @@ const abstractToBeInvisible = () => {
 		abstract.classList.remove('show')
 	})
 }
-
-window.onresize = () => {
+changeAbstractVisibility = () => {
 	console.log(window.innerWidth)
 	if (window.innerWidth > 786) {
 		abstractToBeVisible()
 	} else {
 		abstractToBeInvisible()
 	}
+}
+
+window.onresize = () => {
+	changeAbstractVisibility();
+
+}
+
+window.onload = () => {
+	changeAbstractVisibility()
 }

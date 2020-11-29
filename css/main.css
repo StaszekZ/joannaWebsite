@@ -5,7 +5,8 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 section {
@@ -44,12 +45,4 @@ section {
   color: white;
   font-size: 0.8rem;
   padding: 2.5rem 0;
-}
-
-@media (min-width: 768px) {
-  .dont-collapse-sm {
-    display: block;
-    height: auto !important;
-    visibility: visible;
-  }
 }
