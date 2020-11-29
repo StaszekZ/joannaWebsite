@@ -15,7 +15,7 @@ const abstractToBeInvisible = () => {
 }
 changeAbstractVisibility = () => {
 	console.log(window.innerWidth)
-	if (window.innerWidth > 786) {
+	if (window.innerWidth > 768) {
 		abstractToBeVisible()
 	} else {
 		abstractToBeInvisible()

@@ -37,13 +37,13 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="navbar-collapse collapse" id="nav">
-			<ul class="nav navbar-nav mr-auto">
-				<li class="nav-item active"><a class="nav-link" href="#">Start</a></li>
-				<li class="nav-item"><a class="nav-link" href="#aboutme">About Me</a></li>
-				<li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-				<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-				<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-			</ul>
+			<div class="nav navbar-nav mr-auto">
+				<a class="nav-link active" href="#hero">Start</a>
+				<a class="nav-link" href="#aboutme">About Me</a>
+				<a class="nav-link" href="#publications">Publications</a>
+				<a class="nav-link" href="#projects">Projects</a>
+				<a class="nav-link" href="#contact">Contact</a>
+			</div>
 		</div>
 	</nav>
 	<main>
@@ -55,21 +55,20 @@
 			<div>
 				<h2 class="text-light">My publications:</h2>
 				<p class="lead text-light font-weight-bolder">
-					Please get familiar with my scientific publication, presented in
+					Please get familiar with my scientific publications, presented in
 					chronological oder:
 				</p>
-				<div class="row d-flex justify-content-around dont-collapse-sm">
+				<div class="row d-flex justify-content-around">
 					<div class="col-12 col-lg-10 text-center">
 
-						<div class="card-group ">
-							<div class=" accordion" id="accordionExample">
+						<div class="card-group">
+							<div class="accordion" id="accordionPublications">
 								<div class="row">
-									<div class="card col-12 col-lg-6 col-xl-4 bg-light rounded">
+									<div class="card col-12 col-lg-6 col-xl-4 bg-light rounded mb-3">
 										<div class="card-block">
 											<img src="./img/papers/expert_opinion.JPG" alt="a chaltbok" />
-											<!-- <h4 class="card-title text-center d-none d-sm-block">Abstract
-											</h4> -->
-											<button class="btn btn-outline-warning" type="button" data-toggle="collapse"
+
+											<button class="btn btn-outline-warning d-md-none" type="button" data-toggle="collapse"
 												data-target="#expertOpinion" aria-expanded="true" aria-controls="expertOpinion">
 												See Abstract
 											</button>
@@ -77,7 +76,7 @@
 										</div>
 
 										<div class="card-block collapse abstract" id="expertOpinion" aria-labelledby="expertOpinion"
-											data-parent="#accordionExample">
+											data-parent="#accordionPublications">
 											<p class="card-text">
 												Introduction: Unfractionated heparin is a strongly anionic anticoagulant used extensively in
 												medicine to prevent blood
@@ -113,18 +112,18 @@
 											</a>
 										</div>
 									</div>
-									<div class="card col-12 col-lg-6 col-xl-4 bg-light rounded">
+									<div class="card col-12 col-lg-6 col-xl-4 bg-light rounded mb-3">
 										<div class="card-block">
 											<img src="./img/papers/marine_protamine.JPG" alt="a chaltbok" />
 											<!-- <h4 class="card-title">Abstract</h4> -->
-											<button class="btn btn-outline-warning" type="button" data-toggle="collapse"
+											<button class="btn btn-outline-warning d-md-none" type="button" data-toggle="collapse"
 												data-target="#marineProtamine" aria-expanded="true" aria-controls="marineProtamine">
 												See Abstract
 											</button>
 										</div>
 
 										<div class="card-block collapse abstract" id="marineProtamine" aria-labelledby="marineProtamine"
-											data-parent="#accordionExample">
+											data-parent="#accordionPublications">
 											<p class="card-text">
 												Protamine sulfate (PS) is a polycationic protein drug obtained from the sperm of fish, and is
 												used
@@ -165,16 +164,16 @@
 										</div>
 									</div>
 
-									<div class="card col-12 col-lg-6 col-xl-4 bg-light rounded">
+									<div class="card col-12 col-lg-6 col-xl-4 bg-light rounded mb-3">
 										<div class="card-block">
 											<img src="./img/papers/macromolecules.JPG" alt="a chaltbok" />
-											<button class="btn btn-outline-warning" type="button" data-toggle="collapse"
+											<button class="btn btn-outline-warning d-md-none" type="button" data-toggle="collapse"
 												data-target="#macromolecules" aria-expanded="false" aria-controls="macromolecules">
 												See Abstract
 											</button>
 										</div>
 										<div class="card-block collapse abstract" id="macromolecules" aria-labelledby="macromolecules"
-											data-parent="#accordionExample">
+											data-parent="#accordionPublications">
 											<p class=" card-text show">
 												Di- and triblock copolymers with low dispersity of molecular weight were synthesized using
 												radical
@@ -212,6 +211,155 @@
 											</p>
 											<a type="button" class="btn btn-outline-success"
 												href="https://pubs.acs.org/doi/pdf/10.1021/acs.biomac.8b00691">
+												Learn more
+											</a>
+										</div>
+									</div>
+									<div class="card col-12 col-lg-6 col-xl-4 bg-light rounded mb-3">
+										<div class="card-block">
+											<img src="./img/papers/macromolecules.JPG" alt="a chaltbok" />
+											<button class="btn btn-outline-warning d-md-none" type="button" data-toggle="collapse"
+												data-target="#transRes" aria-expanded="false" aria-controls="transRes">
+												See Abstract
+											</button>
+										</div>
+										<div class="card-block collapse abstract" id="transRes" aria-labelledby="transRes"
+											data-parent="#accordionPublications">
+											<p class=" card-text show">
+												The parenteral anticoagulants may cause uncontrolled and life-threatening bleeding. Protamine,
+												the only registered
+												heparin antidote, is partially effective against low-molecular weight heparins, completely
+												ineffective against
+												fondaparinux and may cause unacceptable toxicity. Therefore, we aimed to develop a synthetic
+												compound for safe and
+												efficient neutralization of all parenteral anticoagulants. We synthesized pegylated PMAPTAC
+												block copolymers, and then,
+												we selected a lead heparin-binding copolymer (HBC). We assessed the effectiveness of HBC in the
+												model of arterial
+												thrombosis electrically induced in the carotid artery of rats by measuring thrombus weight,
+												bleeding time, activated
+												partial thromboplastin time, activated clotting time, and anti-factor Xa activity. The
+												intravital tissue distribution,
+												the cardiorespiratory, and organ toxicity were monitored. HBC diminished antithrombotic and
+												anticoagulant effects of
+												unfractionated heparin. Moreover, it stopped bleeding and completely reversed the enhancement of
+												clotting times and
+												anti-factor Xa activity caused by enoxaparin or fondaparinux. We observed slight pulmonary
+												congestion and cell
+												infiltration, but the cardiorespiratory parameters remained unchanged. We found a strong signal
+												of fluorescently-labeled
+												HBC in the urine, and a weaker in the liver and in the kidney. No signs of hepatic or
+												nephrotoxicity were observed in
+												the blood biochemistry or histopathologic examination. We developed a copolymer efficiently
+												neutralizing effects of
+												heparins in the living organism, which shows a very promising efficacy/safety profile and may
+												help in the management of
+												uncontrolled bleeding resulting from an anticoagulant injection. HBC could enable the safe
+												replacement of unfractionated
+												heparin with low-molecular weight heparins in patients undergoing cardiac surgery and complex
+												vascular procedures.
+											</p>
+											<a type="button" class="btn btn-outline-success" href="https://pubmed.ncbi.nlm.nih.gov/27456749/">
+												Learn more
+											</a>
+										</div>
+									</div>
+
+									<div class="card col-12 col-lg-6 col-xl-4 bg-light rounded mb-3">
+										<div class="card-block">
+											<img src="./img/papers/macromolecules.JPG" alt="a chaltbok" />
+											<button class="btn btn-outline-warning d-md-none" type="button" data-toggle="collapse"
+												data-target="#transRes" aria-expanded="false" aria-controls="transRes">
+												See Abstract
+											</button>
+										</div>
+										<div class="card-block collapse abstract" id="transRes" aria-labelledby="transRes"
+											data-parent="#accordionPublications">
+											<p class=" card-text show">
+												The parenteral anticoagulants may cause uncontrolled and life-threatening bleeding. Protamine,
+												the only registered
+												heparin antidote, is partially effective against low-molecular weight heparins, completely
+												ineffective against
+												fondaparinux and may cause unacceptable toxicity. Therefore, we aimed to develop a synthetic
+												compound for safe and
+												efficient neutralization of all parenteral anticoagulants. We synthesized pegylated PMAPTAC
+												block copolymers, and then,
+												we selected a lead heparin-binding copolymer (HBC). We assessed the effectiveness of HBC in the
+												model of arterial
+												thrombosis electrically induced in the carotid artery of rats by measuring thrombus weight,
+												bleeding time, activated
+												partial thromboplastin time, activated clotting time, and anti-factor Xa activity. The
+												intravital tissue distribution,
+												the cardiorespiratory, and organ toxicity were monitored. HBC diminished antithrombotic and
+												anticoagulant effects of
+												unfractionated heparin. Moreover, it stopped bleeding and completely reversed the enhancement of
+												clotting times and
+												anti-factor Xa activity caused by enoxaparin or fondaparinux. We observed slight pulmonary
+												congestion and cell
+												infiltration, but the cardiorespiratory parameters remained unchanged. We found a strong signal
+												of fluorescently-labeled
+												HBC in the urine, and a weaker in the liver and in the kidney. No signs of hepatic or
+												nephrotoxicity were observed in
+												the blood biochemistry or histopathologic examination. We developed a copolymer efficiently
+												neutralizing effects of
+												heparins in the living organism, which shows a very promising efficacy/safety profile and may
+												help in the management of
+												uncontrolled bleeding resulting from an anticoagulant injection. HBC could enable the safe
+												replacement of unfractionated
+												heparin with low-molecular weight heparins in patients undergoing cardiac surgery and complex
+												vascular procedures.
+											</p>
+											<a type="button" class="btn btn-outline-success" href="https://pubmed.ncbi.nlm.nih.gov/27456749/">
+												Learn more
+											</a>
+										</div>
+									</div>
+
+									<div class="card col-12 col-lg-6 col-xl-4 bg-light rounded mb-3">
+										<div class="card-block">
+											<img src="./img/papers/macromolecules.JPG" alt="a chaltbok" />
+											<button class="btn btn-outline-warning d-md-none" type="button" data-toggle="collapse"
+												data-target="#transRes" aria-expanded="false" aria-controls="transRes">
+												See Abstract
+											</button>
+										</div>
+										<div class="card-block collapse abstract" id="transRes" aria-labelledby="transRes"
+											data-parent="#accordionPublications">
+											<p class=" card-text show">
+												The parenteral anticoagulants may cause uncontrolled and life-threatening bleeding. Protamine,
+												the only registered
+												heparin antidote, is partially effective against low-molecular weight heparins, completely
+												ineffective against
+												fondaparinux and may cause unacceptable toxicity. Therefore, we aimed to develop a synthetic
+												compound for safe and
+												efficient neutralization of all parenteral anticoagulants. We synthesized pegylated PMAPTAC
+												block copolymers, and then,
+												we selected a lead heparin-binding copolymer (HBC). We assessed the effectiveness of HBC in the
+												model of arterial
+												thrombosis electrically induced in the carotid artery of rats by measuring thrombus weight,
+												bleeding time, activated
+												partial thromboplastin time, activated clotting time, and anti-factor Xa activity. The
+												intravital tissue distribution,
+												the cardiorespiratory, and organ toxicity were monitored. HBC diminished antithrombotic and
+												anticoagulant effects of
+												unfractionated heparin. Moreover, it stopped bleeding and completely reversed the enhancement of
+												clotting times and
+												anti-factor Xa activity caused by enoxaparin or fondaparinux. We observed slight pulmonary
+												congestion and cell
+												infiltration, but the cardiorespiratory parameters remained unchanged. We found a strong signal
+												of fluorescently-labeled
+												HBC in the urine, and a weaker in the liver and in the kidney. No signs of hepatic or
+												nephrotoxicity were observed in
+												the blood biochemistry or histopathologic examination. We developed a copolymer efficiently
+												neutralizing effects of
+												heparins in the living organism, which shows a very promising efficacy/safety profile and may
+												help in the management of
+												uncontrolled bleeding resulting from an anticoagulant injection. HBC could enable the safe
+												replacement of unfractionated
+												heparin with low-molecular weight heparins in patients undergoing cardiac surgery and complex
+												vascular procedures.
+											</p>
+											<a type="button" class="btn btn-outline-success" href="https://pubmed.ncbi.nlm.nih.gov/27456749/">
 												Learn more
 											</a>
 										</div>
