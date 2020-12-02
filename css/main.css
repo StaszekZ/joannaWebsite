@@ -24,18 +24,33 @@ section {
   margin: 0 auto;
 }
 
-.aboutme {
-  background-size: cover;
-}
-
-.about-text {
+.hero__text {
   background: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 1.875rem;
   border-radius: 20px;
+  text-shadow: 1px 1px black, 1px 2px 15px white;
+}
+
+.hero__paragraph {
+  font-size: 1.6rem;
+  color: whitesmoke;
+}
+
+.aboutme {
+  background-size: cover;
 }
 
 .publications {
   background: #222 url("../img/papers_bgr.jpg");
   background-size: cover;
+}
+
+@media (max-width: 576px) {
+  .hero__paragraph {
+    font-size: 1rem;
+  }
+  .hero__header {
+    font-size: 1.5rem;
+  }
 }
