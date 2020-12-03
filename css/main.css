@@ -46,6 +46,11 @@ section {
   text-shadow: none;
 }
 
+.hero__img {
+  width: 50px;
+  height: auto;
+}
+
 .aboutme {
   background-size: cover;
 }
