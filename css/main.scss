@@ -15,6 +15,10 @@ section {
   padding-top: 70px;
 }
 
+.nav__bor {
+  box-shadow: 0px 4px 8px -3px rgba(0, 0, 0, 0.75)
+}
+
 .hero {
   background: #222 url('../img/asia/asia1.jpg') center right no-repeat;
   background-size: cover;
@@ -31,7 +35,7 @@ section {
     padding: 1.875rem;
     border-radius: 20px;
     text-shadow: 1px 1px black,
-      1px 2px 15px white;
+      1px 2px 20px white;
   }
 
   &__paragraph {
