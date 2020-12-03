@@ -2,6 +2,7 @@ html,
 body {
   height: 100%;
   scroll-behavior: smooth;
+
 }
 
 img {
@@ -11,6 +12,7 @@ img {
 
 section {
   min-height: 100vh;
+  padding-top: 70px;
 }
 
 .hero {
@@ -50,6 +52,10 @@ section {
   background-size: cover;
 }
 
+
+.projects {
+  background-color: turquoise;
+}
 
 @media(max-width: 576px) {
 

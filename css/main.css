@@ -11,6 +11,7 @@ img {
 
 section {
   min-height: 100vh;
+  padding-top: 70px;
 }
 
 .hero {
@@ -44,6 +45,10 @@ section {
 .publications {
   background: #222 url("../img/papers_bgr.jpg");
   background-size: cover;
+}
+
+.projects {
+  background-color: turquoise;
 }
 
 @media (max-width: 576px) {

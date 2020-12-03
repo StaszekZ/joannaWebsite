@@ -30,3 +30,15 @@ window.onresize = () => {
 window.onload = () => {
 	changeAbstractVisibility()
 }
+
+
+
+
+
+
+
+
+//closing navbar after clicking on menu-link - jQuery
+$(document).on('click', function () {
+	$('.collapse').collapse('hide');
+})
