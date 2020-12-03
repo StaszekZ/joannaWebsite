@@ -39,6 +39,10 @@ section {
     color: whitesmoke;
 
   }
+
+  &__buttonText {
+    text-shadow: none;
+  }
 }
 
 .aboutme {
@@ -52,6 +56,10 @@ section {
   background-size: cover;
 }
 
+.abstract__text {
+  max-height: 400px;
+  overflow-y: auto;
+}
 
 .projects {
   background-color: turquoise;

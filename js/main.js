@@ -40,5 +40,5 @@ window.onload = () => {
 
 //closing navbar after clicking on menu-link - jQuery
 $(document).on('click', function () {
-	$('.collapse').collapse('hide');
+	$('.collapse-on-click').collapse('hide');
 })

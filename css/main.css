@@ -38,6 +38,10 @@ section {
   color: whitesmoke;
 }
 
+.hero__buttonText {
+  text-shadow: none;
+}
+
 .aboutme {
   background-size: cover;
 }
@@ -45,6 +49,11 @@ section {
 .publications {
   background: #222 url("../img/papers_bgr.jpg");
   background-size: cover;
+}
+
+.abstract__text {
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .projects {
