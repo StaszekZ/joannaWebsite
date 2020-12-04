@@ -15,6 +15,10 @@ section {
   padding-top: 70px;
 }
 
+#contact {
+  background-color: rgb(224, 255, 255);
+}
+
 .nav {
   &__bor {
     box-shadow: 0px 4px 8px -3px rgba(0, 0, 0, 0.75)
@@ -25,6 +29,17 @@ section {
     height: auto;
     color: black;
   }
+}
+
+.ddd {
+  background-color: rgba(224, 255, 255, 0.2);
+  padding: 2rem;
+  box-shadow: 0px 0px 6px -2px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+
+.footer {
+  justify-self: end;
 }
 
 .hero {
@@ -88,6 +103,11 @@ section {
   .hero {
     &__paragraph {
       font-size: 1rem;
+    }
+
+    &__text {
+      padding-left: 0;
+      padding-right: 0;
     }
 
     &__header {

@@ -16,62 +16,76 @@
 </head>
 
 <body>
-	<nav class="navbar fixed-top navbar-expand-md bg-light navbar-light nav__bor">
-		<a href="#hero" class="navbar-brand">
-			<img src="./img/asia/android-chrome-192x192.png" class="m-0 hero__img" /> </a>
-		<button class="navbar-toggler" type="button" data-target="#nav" data-toggle="collapse" aria-controls="#nav"
-			aria-expanded="false" aria-label="toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="navbar-collapse collapse collapse-on-click" id="nav">
-			<div class="nav navbar-nav mr-auto w-100">
-				<a class="nav-link active mr-3 ml-3" href="#hero"><span class="sr-only">current</span>Start</a>
-				<!-- <a class="nav-link" href="#aboutme">About Me</a> -->
-				<a class="nav-link mr-3 ml-3" href="#publications">Publications </a>
-				<a class="nav-link mr-3 ml-3" href="#projects">Projects</a>
-				<a class="nav-link mr-3 ml-3" href="#contact">Contact</a>
-				<div class="row align-self-center float-right">
-					<a href="https://www.researchgate.net/profile/Joanna_Miklosz" class="mr-3"> <img
-							src="https://img.icons8.com/windows/64/000000/researchgate.png" class="nav__socialIcon" /> </a>
-
-					<a href="https://scholar.google.pl/citations?user=xamzqDYAAAAJ&hl=pl"><img
+	<header>
+		<nav class="navbar fixed-top navbar-expand-md bg-light navbar-light nav__bor">
+			<a href="/" class="navbar-brand">
+				<img src="./img/asia/android-chrome-192x192.png" class="m-0 hero__img" />
+			</a>
+			<button class="navbar-toggler" type="button" data-target="#nav" data-toggle="collapse" aria-controls="#nav"
+				aria-expanded="false" aria-label="toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse collapse-on-click" id="nav">
+				<ul class="nav navbar-nav bd-navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link active mr-3 ml-3" href="#hero"><span class="sr-only">current</span>Start</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link mr-3 ml-3" href="#publications">Publications </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link mr-3 ml-3" href="#projects">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link mr-3 ml-3" href="#contact">Contact</a>
+					</li>
+				</ul>
+				<div class="row float-right">
+					<a href="https://www.researchgate.net/profile/Joanna_Miklosz"
+						class="offset-2 offset-lg-0 col-3 col-lg-4 text-center">
+						<img src="https://img.icons8.com/windows/64/000000/researchgate.png" class="nav__socialIcon" /> </a>
+					<a href="https://scholar.google.pl/citations?user=xamzqDYAAAAJ&hl=pl" class="col-3 col-lg-4 text-center"><img
 							src="https://img.icons8.com/ios/50/000000/google-scholar--v2.png" class="nav__socialIcon" /></a>
-					<a href="https://www.linkedin.com/in/joanna-mik%C5%82osz-402540162/?originalSubdomain=pl"><img
-							src="https://img.icons8.com/ios/50/000000/linkedin.png" class="nav__socialIcon" /></a>
-				</div>
-			</div>
-		</div>
-	</nav>
-	<section id="hero" class="hero">
-		<div class="container ml-xl-5">
-			<div class="hero__text col-12 col-xl-10 nav__bor">
-				<div class="col-12">
-					<h1 class="hero__header">Joanna Zajaczkowska,<br /> <small>PhD Pharm</small></h1>
-					<p class="hero__paragraph">
-						Hi! I am a research scientist and PhD candidate at Medical University in Bialystok, Poland. I finish my PhD
-						this year.
-						My main area of interest is coagulation disorders and finding new medicament for treating complications
-						after use of
-						heparin. Please get familiar with my publications. I am open for post-doc studies. See you at the
-						conferences!
-					</p>
-					<br />
-					<a href="#contact" class="btn btn-warning btn-md nav__bor" role="button"><span
-							class="hero__buttonText">Contact
-							me: </span><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down" fill="currentColor"
-							xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd"
-								d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
-						</svg> </i></a>
+					<a href="https://www.linkedin.com/in/joanna-mik%C5%82osz-402540162/?originalSubdomain=pl"
+						class="col-3 col-lg-4 text-center"><img src="https://img.icons8.com/ios/50/000000/linkedin.png"
+							class="nav__socialIcon" /></a>
 				</div>
 
 			</div>
-		</div>
-		</div>
-		</div>
-		</div>
-	</section>
+		</nav>
+	</header>
 	<main>
+		<section id="hero" class="hero">
+			<div class="container ml-xl-5">
+				<div class="hero__text col-12 col-xl-10 nav__bor">
+					<div class="col-12">
+						<h1 class="hero__header">Joanna Zajaczkowska,<br /> <small>PhD Pharm</small></h1>
+						<p class="hero__paragraph">
+							Hi! I am a research scientist and PhD candidate at Medical University in Bialystok, Poland. I finish my
+							PhD
+							this year.
+							My main area of interest is coagulation disorders and finding new medicament for treating complications
+							after use of
+							heparin. Please get familiar with my publications. I am open for post-doc studies. See you at the
+							conferences!
+						</p>
+						<br />
+						<a href="#contact" class="btn btn-warning btn-md nav__bor" role="button"><span
+								class="hero__buttonText">Contact
+								me: </span><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down"
+								fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd"
+									d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+							</svg> </i></a>
+					</div>
+
+				</div>
+			</div>
+			</div>
+			</div>
+			</div>
+		</section>
+
 		<!-- <section id="aboutme">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos odit necessitatibus quis reprehenderit laboriosam
 				assumenda explicabo at ipsam aut provident alias modi odio, nobis numquam eveniet quae fugiat hic eligendi.</p>
@@ -527,8 +541,8 @@
 				consequatur voluptates facilis ipsa vitae maiores eveniet aspernatur deserunt, cum perferendis nostrum dolore
 				aperiam quo?</p>
 		</section>
-		<section id="contact" class="d-flex justify-content-center align-items-center">
-			<form class="row ">
+		<section id="contact" class="d-flex flex-column justify-content-center align-items-center">
+			<form class="row ddd">
 				<h3 class="w-100 text-center mb-5">Contact me:</h3>
 				<div class="col-12">
 					<div class="form-group row">
@@ -586,7 +600,11 @@
 					</div>
 				</div>
 			</form>
+			<footer class="footer">
+				Jakaś stoka
+			</footer>
 		</section>
+
 
 	</main>
 
