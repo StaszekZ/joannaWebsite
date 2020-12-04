@@ -21,6 +21,7 @@ section {
 .nav__socialIcon {
   width: 40px;
   height: auto;
+  color: black;
 }
 
 .hero {

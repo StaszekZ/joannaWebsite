@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+		crossorigin="anonymous" />
 	<link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
 	<link rel="stylesheet" href="./css/main.css" />
 	<link rel="icon" type="image/png" href="./img/icons/favicon-32x32.png" />
@@ -21,13 +24,13 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="navbar-collapse collapse collapse-on-click" id="nav">
-			<div class="nav navbar-nav mr-auto">
+			<div class="nav navbar-nav mr-auto w-100">
 				<a class="nav-link active mr-3 ml-3" href="#hero"><span class="sr-only">current</span>Start</a>
 				<!-- <a class="nav-link" href="#aboutme">About Me</a> -->
 				<a class="nav-link mr-3 ml-3" href="#publications">Publications </a>
 				<a class="nav-link mr-3 ml-3" href="#projects">Projects</a>
 				<a class="nav-link mr-3 ml-3" href="#contact">Contact</a>
-				<div class="row align-self-center ">
+				<div class="row align-self-center float-right">
 					<a href="https://www.researchgate.net/profile/Joanna_Miklosz" class="mr-3"> <img
 							src="https://img.icons8.com/windows/64/000000/researchgate.png" class="nav__socialIcon" /> </a>
 
@@ -524,7 +527,66 @@
 				consequatur voluptates facilis ipsa vitae maiores eveniet aspernatur deserunt, cum perferendis nostrum dolore
 				aperiam quo?</p>
 		</section>
-		<section id="contact"></section>
+		<section id="contact" class="d-flex justify-content-center align-items-center">
+			<form class="row ">
+				<h3 class="w-100 text-center mb-5">Contact me:</h3>
+				<div class="col-12">
+					<div class="form-group row">
+						<label class="col-3 col-md-2 text-right col-form-label" for="text">Name</label>
+						<div class="col-12 col-md-8">
+							<div class="input-group">
+								<input id="text" name="text" placeholder="Enter your name" type="text" required="required"
+									class="form-control">
+								<div class="input-group-append">
+									<div class="input-group-text">
+										<i class="fa fa-address-book"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="text2" class="col-3 col-md-2 col-form-label text-right">E-mail</label>
+						<div class="col-12 col-md-8">
+							<div class="input-group">
+								<input id="text2" name="text2" placeholder="Enter your e-mail address" type="text" class="form-control">
+								<div class="input-group-append">
+									<div class="input-group-text">
+										&commat;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="text1" class="col-2 col-form-label text-right">Institution</label>
+						<div class="col-12 col-md-8">
+							<div class="input-group">
+								<input id="text1" name="text1" placeholder="Enter where are you from" type="text" class="form-control">
+								<div class="input-group-append">
+									<div class="input-group-text">
+										<i class="fas fa-university"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="textarea" class="col-2 col-form-label text-right">Message</label>
+						<div class="col-12 col-md-8">
+							<textarea id="textarea" name="textarea" cols="40" rows="5" class="form-control" required="required"
+								aria-describedby="textareaHelpBlock"></textarea>
+							<small id="textareaHelpBlock" class="form-text text-muted">Enter your message</small>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="offset-6 offset-md-2 col-8">
+							<button name="submit" type="submit" class="btn btn-info">Submit</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</section>
 
 	</main>
 
