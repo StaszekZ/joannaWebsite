@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+		crossorigin="anonymous" />
 	<link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
 	<link rel="stylesheet" href="./css/main.css" />
 	<link rel="icon" type="image/png" href="./img/icons/favicon-32x32.png" />
@@ -13,6 +16,32 @@
 </head>
 
 <body>
+	<nav class="navbar fixed-top navbar-expand-md bg-light navbar-light nav__bor">
+		<a href="#hero" class="navbar-brand">
+			<img src="./img/asia/android-chrome-192x192.png" class="m-0 hero__img" /> </a>
+		<button class="navbar-toggler" type="button" data-target="#nav" data-toggle="collapse" aria-controls="#nav"
+			aria-expanded="false" aria-label="toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-collapse collapse collapse-on-click" id="nav">
+			<div class="nav navbar-nav mr-auto w-100">
+				<a class="nav-link active mr-3 ml-3" href="#hero"><span class="sr-only">current</span>Start</a>
+				<!-- <a class="nav-link" href="#aboutme">About Me</a> -->
+				<a class="nav-link mr-3 ml-3" href="#publications">Publications </a>
+				<a class="nav-link mr-3 ml-3" href="#projects">Projects</a>
+				<a class="nav-link mr-3 ml-3" href="#contact">Contact</a>
+				<div class="row align-self-center float-right">
+					<a href="https://www.researchgate.net/profile/Joanna_Miklosz" class="mr-3"> <img
+							src="https://img.icons8.com/windows/64/000000/researchgate.png" class="nav__socialIcon" /> </a>
+
+					<a href="https://scholar.google.pl/citations?user=xamzqDYAAAAJ&hl=pl"><img
+							src="https://img.icons8.com/ios/50/000000/google-scholar--v2.png" class="nav__socialIcon" /></a>
+					<a href="https://www.linkedin.com/in/joanna-mik%C5%82osz-402540162/?originalSubdomain=pl"><img
+							src="https://img.icons8.com/ios/50/000000/linkedin.png" class="nav__socialIcon" /></a>
+				</div>
+			</div>
+		</div>
+	</nav>
 	<section id="hero" class="hero">
 		<div class="container ml-xl-5">
 			<div class="hero__text col-12 col-xl-10 nav__bor">
@@ -42,23 +71,6 @@
 		</div>
 		</div>
 	</section>
-	<nav class="navbar fixed-top navbar-expand-md bg-light navbar-light nav__bor">
-		<a href="#hero" class="navbar-brand">
-			<img src="./img/asia/android-chrome-192x192.png" class="m-0 hero__img" /> </a>
-		<button class="navbar-toggler" type="button" data-target="#nav" data-toggle="collapse" aria-controls="#nav"
-			aria-expanded="false" aria-label="toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="navbar-collapse collapse collapse-on-click" id="nav">
-			<div class="nav navbar-nav mr-auto">
-				<a class="nav-link active mr-3 ml-3" href="#hero">Start</a>
-				<!-- <a class="nav-link" href="#aboutme">About Me</a> -->
-				<a class="nav-link mr-3 ml-3" href="#publications">Publications </a>
-				<a class="nav-link mr-3 ml-3" href="#projects">Projects</a>
-				<a class="nav-link mr-3 ml-3" href="#contact">Contact</a>
-			</div>
-		</div>
-	</nav>
 	<main>
 		<!-- <section id="aboutme">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos odit necessitatibus quis reprehenderit laboriosam
@@ -515,7 +527,66 @@
 				consequatur voluptates facilis ipsa vitae maiores eveniet aspernatur deserunt, cum perferendis nostrum dolore
 				aperiam quo?</p>
 		</section>
-		<section id="contact"></section>
+		<section id="contact" class="d-flex justify-content-center align-items-center">
+			<form class="row ">
+				<h3 class="w-100 text-center mb-5">Contact me:</h3>
+				<div class="col-12">
+					<div class="form-group row">
+						<label class="col-2 text-left text-md-right col-form-label" for="text">Name</label>
+						<div class="col-12 col-md-8">
+							<div class="input-group">
+								<input id="text" name="text" placeholder="Enter your name" type="text" required="required"
+									class="form-control">
+								<div class="input-group-append">
+									<div class="input-group-text">
+										<i class="fa fa-address-book"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="text2" class="col-12 col-sm-2 text-left text-md-right col-form-label">E-mail</label>
+						<div class="col-12 col-md-8">
+							<div class="input-group">
+								<input id="text2" name="text2" placeholder="Enter your e-mail address" type="text" class="form-control">
+								<div class="input-group-append">
+									<div class="input-group-text">
+										&commat;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="text1" class="col-12 col-sm-2  col-form-label text-left text-md-right">Institution</label>
+						<div class="col-12 col-md-8">
+							<div class="input-group">
+								<input id="text1" name="text1" placeholder="Enter where are you from" type="text" class="form-control">
+								<div class="input-group-append">
+									<div class="input-group-text">
+										<i class="fas fa-university"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="textarea" class="col-12 col-sm-2  col-form-label text-left text-md-right">Message</label>
+						<div class="col-12 col-md-8 ">
+							<textarea id="textarea" name="textarea" cols="40" rows="5" class="form-control" required="required"
+								aria-describedby="textareaHelpBlock"></textarea>
+							<small id="textareaHelpBlock" class="form-text text-muted">Enter your message</small>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="offset-0 offset-md-2 col-8">
+							<button name="submit" type="submit" class="btn btn-info">Submit</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</section>
 
 	</main>
 
