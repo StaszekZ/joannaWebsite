@@ -543,20 +543,22 @@
 				aperiam quo?</p>
 		</section>
 		<section id="contact" class="d-flex flex-column justify-content-center align-items-center">
-			<form class="row ddd">
+			<form id="form" class="row ddd needs-validation" novalidate action="mailto:joanmiklosz@gmail.com" method='post'
+				enctype="text/plain">
 				<h3 class="w-100 text-center mb-3">Contact me:</h3>
 				<div class="col-12">
 					<div class="form-group row">
 						<label class="col-2 text-left text-md-right col-form-label" for="name">Name</label>
 						<div class="col-12 col-md-8">
 							<div class="input-group">
-								<input id="name" name="name" placeholder="Enter your name" type="text" required="required"
-									class="form-control form-control-lg">
+								<input id="name" name="name" placeholder="Enter your name" type="text" required pattern='.{3,}'
+									class="formInput form-control form-control-lg">
 								<div class="input-group-append">
 									<div class="input-group-text">
 										<i class="fa fa-address-book"></i>
 									</div>
 								</div>
+								<div class="invalid-feedback">enter your name</div>
 							</div>
 						</div>
 					</div>
@@ -564,13 +566,14 @@
 						<label for="email" class="col-12 col-sm-2 text-left text-md-right col-form-label">E-mail</label>
 						<div class="col-12 col-md-8">
 							<div class="input-group">
-								<input id="email" name="email" placeholder="Enter your e-mail address" type="text" required
-									class="form-control form-control-lg">
+								<input id="email" required name="email" placeholder="Enter your e-mail address" type="email" value=""
+									class="formInput form-control form-control-lg">
 								<div class="input-group-append">
 									<div class="input-group-text">
 										&commat;
 									</div>
 								</div>
+								<div class="invalid-feedback">enter a valid e-mail address</div>
 							</div>
 						</div>
 					</div>
@@ -578,36 +581,38 @@
 						<label for="institution" class="col-12 col-sm-2  col-form-label text-left text-md-right">Institution</label>
 						<div class="col-12 col-md-8">
 							<div class="input-group">
-								<input id="institution" name="institution" placeholder="Enter where are you from" type="text"
-									class="form-control form-control-lg">
+								<input required id="institution" name="institution" placeholder="Enter where are you from" type="text"
+									pattern='.{3,}' class="formInput form-control form-control-lg">
 								<div class="input-group-append">
 									<div class="input-group-text">
 										<i class="fas fa-university"></i>
 									</div>
 								</div>
+								<div class="invalid-feedback">enter your institution</div>
 							</div>
 						</div>
 					</div>
 					<div class="form-group row">
 						<label for="messageText" class="col-12 col-sm-2  col-form-label text-left text-md-right">Message</label>
 						<div class="col-12 col-md-8 ">
-							<textarea id="messageText" name="messageText" cols="40" rows="5" class="form-control form-control-lg"
-								required="required" aria-describedby="textareaHelpBlock"></textarea>
+							<textarea id="messageText" name="messageText" cols="40" rows="5"
+								class="formInput form-control form-control-lg" required aria-describedby="textareaHelpBlock"></textarea>
+							<div class="invalid-feedback">please write something</div>
 							<small id="textareaHelpBlock" class="form-text text-muted">Enter your message</small>
 						</div>
 					</div>
 					<div class="form-group row">
 						<div class="offset-0 offset-md-2 col-8">
-							<button name="submit" type="submit" class="btn btn-info"
+							<button id="sssss" name="submit" type="submit" class="btn btn-info" value="submitted from joanna.science"
 								href="mailto:staszek.zajaczkowski@gmail.com">Submit</button>
 						</div>
 					</div>
 				</div>
 			</form>
-			<footer class="footer">
-				Jakaś stoka
-			</footer>
 		</section>
+		<footer class="footer">
+			Jakaś stopka
+		</footer>
 
 
 	</main>
