@@ -10,12 +10,12 @@ img {
 }
 
 section {
-  min-height: 100vh;
   padding-top: 70px;
 }
 
 #contact {
   background-color: lightcyan;
+  min-height: 90vh;
 }
 
 .nav__bor {
@@ -38,6 +38,7 @@ section {
 .hero {
   background: #222 url("../img/asia/asia1.jpg") center right no-repeat;
   background-size: cover;
+  min-height: 100vh;
   color: white;
   text-align: center;
   display: flex;
@@ -75,6 +76,7 @@ section {
 .publications {
   background: #222 url("../img/papers_bgr.jpg");
   background-size: cover;
+  min-height: 100vh;
 }
 
 .publication__border {
@@ -88,6 +90,11 @@ section {
 
 .projects {
   background-color: turquoise;
+  min-height: 100vh;
+}
+
+.footer {
+  background-color: lightgreen;
 }
 
 @media (max-width: 576px) {
