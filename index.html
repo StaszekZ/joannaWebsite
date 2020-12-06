@@ -81,7 +81,7 @@
 								<path fill-rule="evenodd"
 									d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
 							</svg> </i></a>
-						<a href="./cv_pdf/JoannaMikłosz.pdf" download class="btn btn-outline-warning hero__buttonText">download
+						<a href="./cv_pdf/JoannaMiklosz.pdf" download class="btn btn-outline-warning hero__buttonText">download
 							resume</a>
 					</div>
 
@@ -632,17 +632,40 @@
 							</div>
 							<div class="card-footer">
 								<!-- <small class="text-muted">Grant value: 1 000 000 PLN</small> -->
-								<button class="btn btn-outline-success float-right">See details</button>
+								<button class="btn btn-outline-success float-right " data-toggle="modal" data-target="#projectModal"
+									data-title="jakiś tytuł" data-desc="Opis projektu jakiś długi i waznay opis" data-year="2019-2021">See
+									details</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
+
+			<!-- modal -->
+			<div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="modal for projects" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="projectModalLabel"></h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
 		</section>
 		<section id="contact" class="d-flex flex-column justify-content-center align-items-center">
 			<form id="form" class="row ddd needs-validation" novalidate action="mailto:joanmiklosz@gmail.com" method='post'
-				enctype="text/plain">
+				enctype="text/plain" role="form">
 				<h3 class="w-100 text-center mb-3">Contact me:</h3>
 				<div class="col-12">
 					<div class="form-group row">

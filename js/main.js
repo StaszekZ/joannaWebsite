@@ -64,3 +64,14 @@ $('#form').submit((e) => {
 		return false
 	}
 })
+
+//working modal
+$('#projectModal').on('show.bs.modal', function (event) {
+	const button = $(event.relatedTarget) // Button that triggered the modal
+	const title = button.data('title') //pobieranie tytułu
+	const desc = button.data('desc')
+	const year = button.data('year')
+	const modal = $(this)
+	modal.find('.modal-title').text(title)
+	modal.find('.modal-body').text(desc)
+})
