@@ -109,3 +109,11 @@ section {
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 766px) {
+  .footer__line {
+    border-bottom: 1px solid rgba(220, 220, 220, 0.2);
+    padding-top: 1rem;
+    box-shadow: 0px 4px 8px -3px rgba(0, 0, 0, 0.75);
+  }
+}
