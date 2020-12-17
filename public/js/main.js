@@ -30,34 +30,10 @@ window.onload = () => {
 	changeAbstractVisibility();
 };
 
-//clearing after sending e-mail
-
-// const resetForm = () => {
-// 	console.log('reset')
-// 	setTimeout(() => {
-// 		const iii = document.querySelectorAll('.formInput')
-// 		iii.forEach(ii => {
-// 			ii.value = "";
-
-// 		})
-// 	}, 2000)
-// }
-
 //closing navbar after clicking on menu-link - jQuery
 $(document).on('click', function () {
 	$('.collapse-on-click').collapse('hide');
 });
-
-//form validation - colors
-// $('#form').submit(e => {
-// 	// e.preventDefault()
-// 	const form = e.target;
-// 	form.classList.add('was-validated');
-// 	if (!form.checkValidity()) {
-// 		console.log(form.checkValidity());
-// 		return false;
-// 	}
-// });
 
 //working modal
 $('#projectModal').on('show.bs.modal', function (event) {
@@ -87,13 +63,9 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
-//reference message collection
 const database = firebase.firestore();
-// database.setting({ timestampsInSnapshots: true });
-// const messagesRef = firebase.database().ref('messages');
 
 //to get form values
-
 const getInputVal = id => {
 	return document.getElementById(id);
 };
@@ -101,19 +73,32 @@ const getInputVal = id => {
 //sending form
 const submitForm = e => {
 	e.preventDefault();
+	const form = e.target;
+	form.classList.add('was-validated');
+	if (!form.checkValidity()) {
+		return false;
+	}
 	const name = getInputVal('name').value;
 	const email = getInputVal('email').value;
 	const institution = getInputVal('institution').value;
 	const message = getInputVal('messageText').value;
 
 	saveMessage(name, email, institution, message);
-	// console.log('sent', name, email, institution, message);
 	document.getElementById('form').reset();
+	form.classList.remove('was-validated');
 };
 
 //submit form
 document.getElementById('form').addEventListener('submit', submitForm);
+//show alert after sending message
+const messageSentAlert = document.querySelector('.form__alert');
 
+const showAlert = () => {
+	messageSentAlert.classList.add('d-block');
+	setTimeout(() => {
+		messageSentAlert.classList.remove('d-block');
+	}, 5000);
+};
 //save message to firebase
 function saveMessage(name, email, institution, message) {
 	database
@@ -124,5 +109,5 @@ function saveMessage(name, email, institution, message) {
 			institution: institution,
 			message: message,
 		})
-		.then(() => console.log('mail wysłany', message));
+		.then(() => showAlert());
 }

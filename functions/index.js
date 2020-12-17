@@ -11,7 +11,7 @@ sendGridEmail.setApiKey(SENDGRID_API_KEY);
 exports.AsiaForm = functions.firestore.document('/mails/{mailsId}').onCreate(snap => {
 	const messageData = snap.data();
 	const msg = {
-		to: 'staszek.zajaczkowski@gmail.com',
+		to: 'joanmiklosz@gmail.com',
 		from: 'ktulu.inc@gmail.com',
 		templateId: 'd-699e4e9b498f43c0afb8837277a3d283',
 		dynamic_template_data: {
