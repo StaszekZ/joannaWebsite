@@ -119,13 +119,10 @@ function saveMessage(name, email, institution, message) {
 	database
 		.collection('mails')
 		.add({
-			to: 's.zajaczkowski@gumed.edu.pl',
-			message: {
-				name: name,
-				email: email,
-				institution: institution,
-				message: message,
-			},
+			name: name,
+			email: email,
+			institution: institution,
+			message: message,
 		})
 		.then(() => console.log('mail wysłany', message));
 }
