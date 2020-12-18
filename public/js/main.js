@@ -111,3 +111,8 @@ function saveMessage(name, email, institution, message) {
 		})
 		.then(() => showAlert());
 }
+
+//setting date in footer ©
+const date = new Date().getFullYear();
+// console.log(date);
+document.querySelector('.footer__date').innerText = date.toString();
