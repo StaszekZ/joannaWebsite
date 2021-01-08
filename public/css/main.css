@@ -84,7 +84,7 @@ section {
 }
 
 .publications__header {
-  height: 180px;
+  min-height: 180px;
 }
 
 .publication__border {
