@@ -8,7 +8,7 @@ const SENDGRID_API_KEY = functions.config().sendgrid.key;
 const sendGridEmail = require('@sendgrid/mail');
 sendGridEmail.setApiKey(SENDGRID_API_KEY);
 
-exports.AsiaForm = functions.firestore.document('/mails/{mailsId}').onCreate(snap => {
+exports.AsiaForm = functions.firestore.document('/mails/{mailsId}').onCreate(async snap => {
 	const messageData = snap.data();
 	const msg = {
 		to: 'joanmiklosz@gmail.com',
@@ -22,8 +22,30 @@ exports.AsiaForm = functions.firestore.document('/mails/{mailsId}').onCreate(sna
 		},
 	};
 
-	return sendGridEmail
-		.send(msg)
-		.then(() => console.log('email sent'))
-		.catch(error => console.error(error.toString()));
+	try {
+		await sendGridEmail.send(msg);
+		return console.log('email sent');
+	} catch (error) {
+		return console.error(error.toString());
+	}
 });
+
+exports.asia_form_to_sender = functions.firestore
+	.document('/mails/{mailsId}')
+	.onCreate(async snap => {
+		const messageData = snap.data();
+		const msg = {
+			to: messageData.email,
+			from: 'ktulu.inc@gmail.com',
+			templateId: 'd-34673fdc6ec84ccba73470fe09ff61e5',
+			dynamic_template_data: {
+				message: messageData.message,
+			},
+		};
+		try {
+			await sendGridEmail.send(msg);
+			return console.log('email sent');
+		} catch (error) {
+			throw new Error(error.toString());
+		}
+	});
